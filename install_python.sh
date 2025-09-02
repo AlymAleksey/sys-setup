@@ -1,9 +1,9 @@
 #!/bin/bash
 set -e  # Выход при ошибке
 
-# Запрос версии у пользователя
-read -p "Введите версию Python для установки (например, 3.13.0): " PYTHON_VERSION
-
+# Запрос версии у пользователя с дефолтным значением
+read -p "Введите версию Python для установки (например, 3.13.0) [3.13.0]: " PYTHON_VERSION
+PYTHON_VERSION=${PYTHON_VERSION:-3.13.0}
 
 # Получаем Major.Minor часть (например, из 3.13.0 -> 3.13)
 PYTHON_MAJOR=$(echo "$PYTHON_VERSION" | awk -F. '{print $1"."$2}')
