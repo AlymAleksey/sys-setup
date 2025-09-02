@@ -14,8 +14,6 @@ INSTALL_DIR="/opt/python/${PYTHON_VERSION}"
 echo "Установка пакетов для сборки Python..."
 sudo apt update -y
 sudo apt install -y \
-  build-essential \
-  pkg-config \
   zlib1g-dev \
   libffi-dev \
   libsqlite3-dev \
