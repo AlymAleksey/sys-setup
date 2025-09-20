@@ -26,7 +26,6 @@ sudo apt install -y \
   libbz2-dev \
   libexpat1-dev \
   liblzma-dev \
-  libmpdec-dev \
   libzstd-dev \
   uuid-dev \
   tk-dev
