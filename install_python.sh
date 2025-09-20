@@ -31,6 +31,13 @@ sudo apt install -y \
   uuid-dev \
   tk-dev
 
+# Добавляем libmpdec-dev, если он доступен в репозитории
+if apt-cache show libmpdec-dev >/dev/null 2>&1; then
+  PKGS+=(libmpdec-dev)
+else
+  echo "⚠️  libmpdec-dev не найден в репозиториях — пропускаем"
+fi
+
 echo "Переход в директорию исходников: $SRC_DIR"
 cd "$SRC_DIR"
 
