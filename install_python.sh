@@ -28,7 +28,9 @@ sudo apt install -y \
   liblzma-dev \
   libzstd-dev \
   uuid-dev \
-  tk-dev
+  tk-dev \
+  libnsl-dev \
+  libtirpc-dev
 
 # Добавляем libmpdec-dev, если он доступен в репозитории
 if apt-cache show libmpdec-dev >/dev/null 2>&1; then
